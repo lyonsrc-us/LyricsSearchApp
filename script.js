@@ -11,7 +11,7 @@ async function searchSongs(term) {
   const res = await fetch(`${apiURL}/suggest/${term}`);
   const data = await res.json();
 
-  showDataUnsafe(data);
+  showDataSafe(data);
 }
 
 // Event listeners
